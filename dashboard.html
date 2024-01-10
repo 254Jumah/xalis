@@ -2,21 +2,23 @@
 <html lang="en">
 
 
-<!-- Mirrored from themesbrand.com/dason/layouts/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Nov 2021 16:51:19 GMT -->
+<!-- Mirrored from themesbrand.com/dason/layouts/default/ecommerce-add-product.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Nov 2021 16:53:55 GMT -->
 
 <head>
 
     <meta charset="utf-8" />
-    <title>{Dashboard | xalis system}</title>
+    <title>xalis</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
     <!-- App favicon -->
-    <link rel="shortcut icon" href="assets/images/logo5.png">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
 
-    <!-- plugin css -->
-    <link href="assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet"
-        type="text/css" />
+    <!-- select2 css -->
+    <link href="assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- dropzone css -->
+    <link href="assets/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
 
     <!-- preloader css -->
     <link rel="stylesheet" href="assets/css/preloader.min.css" type="text/css" />
@@ -27,7 +29,6 @@
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
-    
 
 </head>
 
@@ -44,7 +45,7 @@
                 <div class="d-flex">
                     <!-- LOGO -->
                     <div class="navbar-brand-box">
-                        <a href="index.html" class="logo logo-dark">
+                        <a href="dashboard.html" class="logo logo-dark">
                             <span class="logo-sm">
                                 <img src="assets/images/logo-sm.svg" alt="" height="30">
                             </span>
@@ -60,7 +61,7 @@
                             </span>
                             <span class="logo-lg">
                                 <img src="assets/images/logo-sm.svg" alt="" height="24"> <span
-                                    class="logo-txt">xalis System</span>
+                                    class="logo-txt">xalis</span>
                             </span>
                         </a>
                     </div>
@@ -103,7 +104,45 @@
                         </div>
                     </div>
 
-                   
+                    <div class="dropdown d-none d-sm-inline-block">
+                        <button type="button" class="btn header-item" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <img id="header-lang-img" src="assets/images/flags/us.jpg" alt="Header Language"
+                                height="16">
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="en">
+                                <img src="assets/images/flags/us.jpg" alt="user-image" class="me-1" height="12"> <span
+                                    class="align-middle">English</span>
+                            </a>
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="sp">
+                                <img src="assets/images/flags/spain.jpg" alt="user-image" class="me-1" height="12">
+                                <span class="align-middle">Spanish</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="gr">
+                                <img src="assets/images/flags/germany.jpg" alt="user-image" class="me-1" height="12">
+                                <span class="align-middle">German</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="it">
+                                <img src="assets/images/flags/italy.jpg" alt="user-image" class="me-1" height="12">
+                                <span class="align-middle">Italian</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="ru">
+                                <img src="assets/images/flags/russia.jpg" alt="user-image" class="me-1" height="12">
+                                <span class="align-middle">Russian</span>
+                            </a>
+                        </div>
+                    </div>
+
                     <div class="dropdown d-none d-sm-inline-block">
                         <button type="button" class="btn header-item" id="mode-setting-btn">
                             <i data-feather="moon" class="icon-lg layout-mode-dark"></i>
@@ -318,24 +357,24 @@
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="record-purchase.html" key="t-products">Record Purchases</a></li>
-                                <li><a href="supplier-data.html" data-key="t-product-detail">Supplier
-                                        Details</a></li>
+                                <li><a href="supplier-data.html" data-key="t-product-detail">Supplier Details</a></li>
                                 <li><a href="ecommerce-orders.html" data-key="t-orders">Inventory</a></li>
                                 <li><a href="ecommerce-customers.html" data-key="t-customers">View Purchases</a></li>
-                                </ul>
+                            </ul>
                         </li>
+
                         <li>
                             <a href="javascript: void(0);" class="has-arrow">
-                                <i data-feather="globe"></i>
-                                <span data-key="t-ecommerce">Production</span>
+                                <i data-feather="mail"></i>
+                                <span data-key="t-email">Production</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="#" key="t-products">Record Daily Production</a></li>
-                                <li><a href="#" data-key="t-product-detail">View Production
-                                        Details</a></li>
-                                <li><a href="ecommerce-orders.html" data-key="t-orders">inject another one</a></li>
-                                </ul>
+                                <li><a href="apps-email-inbox.html" data-key="t-inbox">Record Daily Production</a></li>
+                                <li><a href="apps-email-read.html" data-key="t-read-email">View Production Details</a>
+                                </li>
+                            </ul>
                         </li>
+
                         <li>
                             <a href="javascript: void(0);" class="has-arrow">
                                 <i data-feather="layers"></i>
@@ -347,9 +386,11 @@
                                 <li><a href="#" data-key="t-product-detail">Assignments</a></li>
                                 <li><a href="ecommerce-orders.html" data-key="t-orders">Assignments Returns</a></li>
                                 <li><a href="ecommerce-customers.html" data-key="t-customers">View Assignments</a></li>
-                                <li><a href="ecommerce-customers.html" data-key="t-customers">DEpertments store status</a></li>
+                                <li><a href="ecommerce-customers.html" data-key="t-customers">DEpertments store
+                                        status</a></li>
                             </ul>
                         </li>
+
                         <li>
                             <a href="javascript: void(0);" class="has-arrow">
                                 <i data-feather="package"></i>
@@ -358,18 +399,19 @@
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="#" key="t-products">PURCHASES</a></li>
                                 <li><a href="#" data-key="t-product-detail">SALES
-</a></li>
+                                    </a></li>
                                 <li><a href="" data-key="t-orders"> View Bills</a></li>
                                 <li><a href="ecommerce-customers.html" data-key="t-customers">Accounts</a></li>
                             </ul>
                         </li>
+
                         <li>
                             <a href="javascript: void(0);" class="has-arrow">
                                 <i data-feather="users"></i>
                                 <span data-key="t-contacts">Human Resource</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="#" data-key="t-user-grid">Add  employee</a></li>
+                                <li><a href="#" data-key="t-user-grid">Add employee</a></li>
                                 <li><a href="#" data-key="t-user-list">employees profile List</a></li>
                                 <li><a href="#" data-key="t-profile">employees working Hours</a></li>
                                 <li><a href="calender.html" data-key="t-profile">calender</a></li>
@@ -384,7 +426,7 @@
                                 <li><a href="#" data-key="t-user-grid">Record sales </a></li>
                                 <li><a href="#" data-key="t-user-list">View Assignments</a></li>
                                 <li><a href="#" data-key="t-profile">Asignment Returns</a></li>
-                                </ul>
+                            </ul>
                         </li>
                         <li>
                             <a href="javascript: void(0);" class="has-arrow">
@@ -393,10 +435,10 @@
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="#" data-key="t-user-grid">Record Bill </a></li>
-                                
+
                             </ul>
                         </li>
-                                               
+
                         <li class="menu-title" data-key="t-pages">SERVICES</li>
 
                         <li>
@@ -409,8 +451,9 @@
                                 <li><a href="#" data-key="t-register">Sales Analytics</a></li>
                                 <li><a href="#" data-key="t-recover-password">Production Analytics</a>
                                 </li>
-                                <li><a href="auth-lock-screen.html" data-key="t-lock-screen">Purchases Analytics</a></li>
-                                
+                                <li><a href="auth-lock-screen.html" data-key="t-lock-screen">Purchases Analytics</a>
+                                </li>
+
                             </ul>
                         </li>
                         <li>
@@ -420,30 +463,17 @@
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="#" data-key="t-login">Documentation</a></li>
-                                
+
                             </ul>
                         </li>
+                    </ul>
 
-                        
-
-                       
-
-
-                       
-
-                           
-
-                        
-
-                       
-
-                  
-
-                    </div>
+                </div>
                 <!-- Sidebar -->
             </div>
         </div>
         <!-- Left Sidebar End -->
+        <!-- copy upto here -->
 
 
 
@@ -1132,6 +1162,10 @@
 
 
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/pages/ecommerce-select2.init.js"></script>
+    
+    <script src="assets/js/app.js"></script>
+
 </body>
 
 
