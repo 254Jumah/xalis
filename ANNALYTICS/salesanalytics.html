@@ -1,11 +1,436 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
+
+<!-- Mirrored from themesbrand.com/dason/layouts/default/ecommerce-add-product.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Nov 2021 16:53:55 GMT -->
+
 <head>
-    <meta charset="UTF-8">
+
+    <meta charset="utf-8" />
+    <title>xalis</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="../assets/images/favicon.ico">
+
+    <!-- select2 css -->
+    <link href="../assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- dropzone css -->
+    <link href="../assets/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- preloader css -->
+    <link rel="stylesheet" href="../assets/css/preloader.min.css" type="text/css" />
+
+    <!-- Bootstrap Css -->
+    <link href="../assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="../assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
 </head>
-<body>
-    salaes Analytics
+
+<body data-topbar="dark">
+
+    <!-- <body data-layout="horizontal"> -->
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="d-flex">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box">
+                        <a href="dashboard.html" class="logo logo-dark">
+                            <span class="logo-sm">
+                                <img src="../assets/images/logo-sm.svg" alt="" height="30">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="../assets/images/logo-sm.svg" alt="" height="24"> <span
+                                    class="logo-txt">xalis</span>
+                            </span>
+                        </a>
+
+                        <a href="dashboard.html" class="logo logo-light">
+                            <span class="logo-sm">
+                                <img src="../assets/images/logo-sm.svg" alt="" height="30">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="../assets/images/logo-sm.svg" alt="" height="24"> <span
+                                    class="logo-txt">xalis</span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <button type="button" class="btn btn-sm px-3 font-size-16 header-item" id="vertical-menu-btn">
+                        <i class="fa fa-fw fa-bars"></i>
+                    </button>
+
+                    <!-- App Search-->
+                    <form class="app-search d-none d-lg-block">
+                        <div class="position-relative">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <button class="btn btn-primary" type="button"><i
+                                    class="bx bx-search-alt align-middle"></i></button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="d-flex">
+
+                    <div class="dropdown d-inline-block d-lg-none ms-2">
+                        <button type="button" class="btn header-item" id="page-header-search-dropdown"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i data-feather="search" class="icon-lg"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                            aria-labelledby="page-header-search-dropdown">
+
+                            <form class="p-3">
+                                <div class="form-group m-0">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search ..."
+                                            aria-label="Search Result">
+
+                                        <button class="btn btn-primary" type="submit"><i
+                                                class="mdi mdi-magnify"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="dropdown d-none d-sm-inline-block">
+                        <button type="button" class="btn header-item" id="mode-setting-btn">
+                            <i data-feather="moon" class="icon-lg layout-mode-dark"></i>
+                            <i data-feather="sun" class="icon-lg layout-mode-light"></i>
+                        </button>
+                    </div>
+
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item noti-icon position-relative"
+                            id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i data-feather="bell" class="icon-lg"></i>
+                            <span class="badge bg-danger rounded-pill">5</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                            aria-labelledby="page-header-notifications-dropdown">
+                            <div class="p-3">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h6 class="m-0"> Notifications </h6>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="#!" class="small text-reset text-decoration-underline"> Unread (3)</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-simplebar style="max-height: 230px;">
+                                <a href="#!" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <img src="../assets/images/users/avatar-3.jpg"
+                                                class="rounded-circle avatar-sm" alt="user-pic">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1">James Lemire</h6>
+                                            <div class="font-size-13 text-muted">
+                                                <p class="mb-1">It will seem like simplified English.</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hours
+                                                        ago</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#!" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 avatar-sm me-3">
+                                            <span class="avatar-title bg-primary rounded-circle font-size-16">
+                                                <i class="bx bx-cart"></i>
+                                            </span>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1">Your order is placed</h6>
+                                            <div class="font-size-13 text-muted">
+                                                <p class="mb-1">If several languages coalesce the grammar</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>3 min
+                                                        ago</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#!" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 avatar-sm me-3">
+                                            <span class="avatar-title bg-success rounded-circle font-size-16">
+                                                <i class="bx bx-badge-check"></i>
+                                            </span>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1">Your item is shipped</h6>
+                                            <div class="font-size-13 text-muted">
+                                                <p class="mb-1">If several languages coalesce the grammar</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>3 min
+                                                        ago</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#!" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <img src="../assets/images/users/avatar-6.jpg"
+                                                class="rounded-circle avatar-sm" alt="user-pic">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1">Salena Layfield</h6>
+                                            <div class="font-size-13 text-muted">
+                                                <p class="mb-1">As a skeptical Cambridge friend of mine occidental.</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hours
+                                                        ago</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="p-2 border-top d-grid">
+                                <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
+                                    <i class="mdi mdi-arrow-right-circle me-1"></i> <span>View More..</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item right-bar-toggle me-2">
+                            <i data-feather="settings" class="icon-lg"></i>
+                        </button>
+                    </div>
+
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item bg-soft-light border-start border-end"
+                            id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <img class="rounded-circle header-profile-user" src="../assets/images/users/avatar-1.jpg"
+                                alt="Header Avatar">
+                            <span class="d-none d-xl-inline-block ms-1 fw-medium">Paul K.</span>
+                            <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <!-- item-->
+                            <a class="dropdown-item" href="apps-contacts-profile.html"><i
+                                    class="mdi mdi-face-profile font-size-16 align-middle me-1"></i> Profile</a>
+                            <a class="dropdown-item" href="auth-lock-screen.html"><i
+                                    class="mdi mdi-lock font-size-16 align-middle me-1"></i> Lock screen</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="auth-logout.html"><i
+                                    class="mdi mdi-logout font-size-16 align-middle me-1"></i> Logout</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
+
+            <div data-simplebar class="h-100">
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+                        <li class="menu-title" data-key="t-menu">Menu</li>
+
+                        <li>
+                            <a href="../dashboard.html">
+                                <i data-feather="home"></i>
+                                <span class="badge rounded-pill bg-soft-success text-success float-end">9+</span>
+                                <span data-key="t-dashboard">Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-title" data-key="t-apps">Departments</li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow">
+                                <i data-feather="shopping-cart"></i>
+                                <span data-key="t-ecommerce">Procurement</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="../PROCUMENT/record-purchase.html" key="t-products">Record Purchases</a>
+                                </li>
+                                <li><a href="../PROCUMENT/supplier-data.html" data-key="t-product-detail">Supplier
+                                        Details</a></li>
+                                <li><a href="../PROCUMENT/inventory.html" data-key="t-orders">Inventory</a></li>
+                                <li><a href="../PROCUMENT/view_purchases.html" data-key="t-customers">View Purchases</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow">
+                                <i data-feather="mail"></i>
+                                <span data-key="t-email">Production</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="../PRODUCTION/recordproduction.html" data-key="t-inbox">Record Daily
+                                        Production</a></li>
+                                <li><a href="../PRODUCTION/viewproductiondetail.html" data-key="t-read-email">View
+                                        Production Details</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow">
+                                <i data-feather="layers"></i>
+                                <span data-key="t-ecommerce">Store</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="../STORE/productionstore.html" key="t-products">Production store</a></li>
+                                <li><a href="../STORE/product-sore.html" data-key="t-customers">Product stores</a></li>
+                                <li><a href="../STORE/Assignments.html" data-key="t-product-detail">Assignments</a></li>
+                                <li><a href="../STORE/Assignmentreturn.html" data-key="t-orders">Assignments Returns</a>
+                                </li>
+                                <li><a href="../STORE/view-Assignment.html" data-key="t-customers">View Assignments</a>
+                                </li>
+                                <li><a href="../STORE/Depertmentalstore.html" data-key="t-customers">DEpertments store
+                                        status</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow">
+                                <i data-feather="package"></i>
+                                <span data-key="t-ecommerce">Finance</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="../FINANCE/purchase.html" key="t-products">PURCHASES</a></li>
+                                <li><a href="../FINANCE/sales.html" data-key="t-product-detail">SALES
+                                    </a></li>
+                                <li><a href="../FINANCE/view-bill.html" data-key="t-orders"> View Bills</a></li>
+                                <li><a href="../FINANCE/seller-accounts.html" data-key="t-customers">Accounts</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow">
+                                <i data-feather="users"></i>
+                                <span data-key="t-contacts">Human Resource</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="../HR/add-employees.html" data-key="t-user-grid">Add employee</a></li>
+                                <li><a href="../HR/employees-profile.html" data-key="t-user-list">employees profile
+                                        List</a></li>
+                                <li><a href="../HR/employeesmanagment.html" data-key="t-profile">employees working
+                                        Hours</a></li>
+                                <li><a href="../HR/Event-calender.html" data-key="t-profile">calender</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow">
+                                <i data-feather="truck"></i>
+                                <span data-key="t-contacts">Sales</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="../SALES/recordsales.html" data-key="t-user-grid">Record sales </a></li>
+                                <li><a href="../SALES/View-assi.html" data-key="t-user-list">View Assignments</a></li>
+                                <li><a href="../SALES/myassignmentreturn.html" data-key="t-profile">Asignment
+                                        Returns</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow">
+                                <i data-feather="save"></i>
+                                <span data-key="t-contacts">Bills</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="../BILL/recordbill.html" data-key="t-user-grid">Record Bill </a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="menu-title" data-key="t-pages">SERVICES</li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow">
+                                <i data-feather="layers"></i>
+                                <span data-key="t-authentication">Analytics</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="../ANNALYTICS/financialanalytics.html" data-key="t-login">Financial
+                                        Analytics</a></li>
+                                <li><a href="../ANNALYTICS/salesanalytics.html" data-key="t-register">Sales
+                                        Analytics</a>
+                                </li>
+                                <li><a href="../ANNALYTICS/production-analytics.html"
+                                        data-key="t-recover-password">Production Analytics</a>
+                                </li>
+                                <li><a href="../ANNALYTICS/purchase-analytics.html" data-key="t-lock-screen">Purchases
+                                        Analytics</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow">
+                                <i data-feather="layers"></i>
+                                <span data-key="t-authentication">Documentation</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="../DOCUMENTATION/documentation.html" data-key="t-login">Documentation</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+        <!-- copy upto here -->
+
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+
+        <div class="rightbar-overlay"></div>
+
+        <!-- JAVASCRIPT -->
+        <script src="../assets/libs/jquery/jquery.min.js"></script>
+        <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="../assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="../assets/libs/node-waves/waves.min.js"></script>
+        <script src="../assets/libs/feather-icons/feather.min.js"></script>
+        <!-- pace js -->
+        <script src="../assets/libs/pace-js/pace.min.js"></script>
+
+        <!-- select 2 plugin -->
+        <script src="../assets/libs/select2/js/select2.min.js"></script>
+
+        <!-- dropzone plugin -->
+        <script src="../assets/libs/dropzone/min/dropzone.min.js"></script>
+
+        <!-- init js -->
+        <script src="../assets/js/pages/ecommerce-select2.init.js"></script>
+
+        <script src="../assets/js/app.js"></script>
+
 </body>
+
+<!-- Mirrored from themesbrand.com/dason/layouts/default/ecommerce-add-product.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Nov 2021 16:53:57 GMT -->
+
 </html>
