@@ -32,7 +32,7 @@
 
 </head>
 
-<body data-topbar="dark">
+< data-topbar="dark">
 
     <!-- <body data-layout="horizontal"> -->
 
@@ -398,13 +398,193 @@
                 <!-- Sidebar -->
             </div>
         </div>
-        <!-- Left Sidebar End -->
+        </div>
+        <div class="main-content">           
+                <div class="page-content">
+                    <class class="container-fluid">
+                
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                    <h4 class="mb-sm-0 font-size-18">INVENTORY SECTION</h4>
+                
+                                    <div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">INVENTORY</a></li>
+                                            <li class="breadcrumb-item active">KARIBU</li>
+                                        </ol>
+                                    </div>
+                
+                                </div>
+                            </div>
+                        </div>                 <!-- end page title -->
+                       
+                
+                        <div class="row">
+                            <div class="col-xl-3 col-md-6">
+                                <!-- card -->
+                                <div class="card card-h-100">
+                                    <!-- card body -->
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-3">
+                                                <span class="text-muted mb-3 lh- d-block text-truncate">PRODUCT PURCHASES</span>
+                                                <h4 class="mb-3">
+                                                    ksh<span class="counter-value" data-target="36000">0</span>
+                                                </h4>
+                                                <div class="text-nowrap">
+                                                    <span class="badge bg-soft-success text-success">KSH. 45,000</span>
+                                                    <span class="ms-1 text-muted font-size-13">Total this week</span>
+                                                </div>
+                                            </div>
+                
+                                            <div class="flex-shrink-0 text-end dash-widget">
+                                                <div id="mini-chart1" data-colors='["#1c84ee", "#33c38e"]' class="apex-charts"></div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                
+                            <div class="col-xl-3 col-md-6">
+                                <!-- card -->
+                                <div class="card card-h-100">
+                                    <!-- card body -->
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1">
+                                                <span class="text-muted mb-3 lh-1 d-block text-truncate">TODAY  CREDIT PURHASES</span>
+                                                <h4 class="mb-3">
+                                                    KSH <span class="counter-value" data-target="185799">0</span>
+                                                </h4>
+                                                <div class="text-nowrap">
+                                                    <span class="badge bg-soft-success text-success">2323432</span>
+                                                    <span class="ms-1 text-muted font-size-13">Total this week</span>
+                                                </div>
+                                            </div>
+                                            <div class="flex-shrink-0 text-end dash-widget">
+                                                <div id="mini-chart2" data-colors='["#1c84ee", "#33c38e"]' class="apex-charts"></div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card body -->
+                                </div><!-- end card -->
+                            </div><!-- end col-->
+                
+                            <div class="col-xl-3 col-md-6">
+                                <!-- card -->
+                                <div class="card card-h-100">
+                                    <!-- card body -->
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1">
+                                                <span class="text-muted mb-3 lh-1 d-block text-truncate">TOTAL NO. SUPPLIERS
+                                                </span>
+                                                <h4 class="mb-3">
+                                                    <span class="counter-value" data-target="5"></span>
+                                                </h4>
+                                                
+                                            </div>
+                                            <div class="flex-shrink-0 text-end dash-widget">
+                                                <div id="mini-chart3" data-colors='["#1c84ee", "#33c38e"]' class="apex-charts"></div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                
+                            <div class="col-xl-3 col-md-6">
+                                <!-- card -->
+                                <div class="card card-h-100">
+                                    <!-- card body -->
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1">
+                                                <span class="text-muted mb-3 lh-1 d-block text-truncate">TOTAL EXPENSES</span>
+                                                <h4 class="mb-3">
+                                                    <span class="text-danger">KSH</span> <span class="counter-value text-danger"
+                                                        data-target="45678">0</span>
+                                                </h4>
+                                                <div class="text-nowrap">
+                                                    <span class="badge bg-soft-danger text-danger">ksh 56789</span>
+                                                    <span class="ms-1 text-muted font-size-13">Total this week</span>
+                                                </div>
+                                            </div>
+                                            <div class="flex-shrink-0 text-end dash-widget">
+                                                <div id="mini-chart4" data-colors='["#1c84ee", "#33c38e"]' class="apex-charts"></div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row-->
+                
+                
+                    </class>
+                
+                    <!-- have injected the tble through here -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Company Assets </h4>
+                                    
+                                </div>
+                                <div class="card-body">
+                                    <table id="datatable-buttons" class="table table-bordered dt-responsive nowrap w-100">
+                                        <thead>
+                                            <tr>
+                                                <th>Item Name</th>
+                                                <th>Cartegory</th>
+                                                <th>Depertment of Usage</th>
+                                                <th>Date of purchase</th>
+                                                <th>Quantty Purchased</th>
+                                                <th>Cost Incured</th>
+                                            </tr>
+                                        </thead>
+                
+                
+                                        <tbody>                                  
+                                           
+                                            <tr>
+                                                <td>Desk</td>
+                                                <td>Fixed Assets</td>
+                                                <td>main office</td>
+                                                <td>10/03/2023</td>
+                                                <td>5</td>
+                                                <td>Ksh5000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Photocopying papers</td>
+                                                <td>Office Accesories</td>
+                                                <td>IT  depertment</td>
+                                                <td>2013/03/03</td>
+                                                <td>5 pcs</td>
+                                                <td>342,000</td>
+                                            </tr>                                          
+                                            <tr>
+                                                <td>Shou Itou</td>
+                                                <td>Regional Marketing</td>
+                                                <td>Tokyo</td>
+                                                <td>20</td>
+                                                <td>2011/08/14</td>
+                                                <td>$163,000</td>
+                                            </tr>
+                
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- end cardaa -->
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+                </div> <!-- container-fluid -->
+      
+                
         <!-- copy upto here -->
+<!-- TABLE 2 -->
 
-
-        <!-- ============================================================== -->
-        <!-- Start right Content here -->
-        <!-- ============================================================== -->
+        
         <footer class="footer">
             <div class="container-fluid">
                 <div class="row">
@@ -421,7 +601,7 @@
         </footer>
 
         <div class="rightbar-overlay"></div>
-
+        
         <!-- JAVASCRIPT -->
         <script src="../assets/libs/jquery/jquery.min.js"></script>
         <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -431,18 +611,42 @@
         <script src="../assets/libs/feather-icons/feather.min.js"></script>
         <!-- pace js -->
         <script src="../assets/libs/pace-js/pace.min.js"></script>
-
-        <!-- select 2 plugin -->
-        <script src="../assets/libs/select2/js/select2.min.js"></script>
-
-        <!-- dropzone plugin -->
-        <script src="../assets/libs/dropzone/min/dropzone.min.js"></script>
-
-        <!-- init js -->
-        <script src="../assets/js/pages/ecommerce-select2.init.js"></script>
-
+        <!-- Required datatable js -->
+        <script src="../assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="../assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+        
+        <!-- apexcharts -->
+        <script src="../assets/libs/apexcharts/apexcharts.min.js"></script>
+        <!-- Buttons examples -->
+        <script src="../assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+        <script src="../assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+        <script src="../assets/libs/jszip/jszip.min.js"></script>
+        <script src="../assets/libs/pdfmake/build/pdfmake.min.js"></script>
+        <script src="../assets/libs/pdfmake/build/vfs_fonts.js"></script>
+        <script src="../assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+        <script src="../assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+        <script src="../assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+        
+        <!-- Responsive examples -->
+        <script src="../assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+        <script src="../assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+        
+        <!-- Plugins js-->
+        <script src="../assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js"></script>
+        <script src="../assets/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-world-mill-en.js"></script>
+        <!-- dashboard init -->
+        <script src="../assets/js/pages/dashboard.init.js"></script>
+        <!-- Datatable init js -->
+        <script src="../assets/js/pages/datatables.init.js"></script>
+        <!-- trying more js -->
+        
         <script src="../assets/js/app.js"></script>
-
+        
+        
+        <script src="../assets/js/app.js"></script>
+        <script src="../assets/js/pages/ecommerce-select2.init.js"></script>
+        
+        <script src="../assets/js/app.js"></script>
 </body>
 
 <!-- Mirrored from themesbrand.com/dason/layouts/default/ecommerce-add-product.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Nov 2021 16:53:57 GMT -->
