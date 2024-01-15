@@ -32,7 +32,7 @@
 
 </head>
 
-<body data-topbar="dark">
+< data-topbar="dark">
 
     <!-- <body data-layout="horizontal"> -->
 
@@ -398,27 +398,138 @@
                 <!-- Sidebar -->
             </div>
         </div>
+        </div>
+        
         <!-- Left Sidebar End -->
         <!-- copy upto here -->
 
+<div class="main-content">
 
-        <!-- ============================================================== -->
-        <!-- Start right Content here -->
-        <!-- ============================================================== -->
-<footer class="footer">
-    <div class="container-fluid">
+    <div class="page-content">
+        <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-6">
-                <script>document.write(new Date().getFullYear())</script> © zantelle limited.
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title mb-0">Record Daily Production of diffrent products</h4>
+                    </div>
+                    <div class="card-body">
+        
+                        <div id="progrss-wizard" class="twitter-bs-wizard">
+                            <ul class="twitter-bs-wizard-nav nav nav-pills nav-justified">
+                                <li class="nav-item">
+                                    <a href="#progress-seller-details" class="nav-link" data-toggle="tab">
+                                        <div class="step-icon" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="Production Details">
+                                            <i class="bx bx-list-ul"></i>
+                                        </div>
+                                    </a>
+                                </li>                                
+                            </ul>
+                            <!-- wizard-nav -->
+        
+                            <div id="bar" class="progress mt-4">
+                                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"></div>
+                            </div>
+                            <div class="tab-content twitter-bs-wizard-tab-content">
+                                <div class="tab-pane" id="progress-seller-details">
+                                    <div class="text-center mb-4">
+                                        <h5>Production  Details</h5>
+                                        <p class="card-title-desc">Fill all information below</p>
+                                    </div>
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <label class="form-label">Select Product </label>
+                                                <select class="form-select">
+                                                    <option>Select</option>
+                                                    <option>500ml water</option>
+                                                    <option>1 litre alcohol</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <label for="example-date-input" class="form-label">Date</label>
+                                                <input class="form-control" type="date" value="dd/mm/yyyy" id="example-date-input">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <label class="form-label">Select unit </label>
+                                                <select class="form-select">
+                                                    <option>Select</option>
+                                                    <option>pcs</option>
+                                                    <option>bale</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="mb-3">
+                                                    <label for="progresspill-pancard-input" class="form-label">Quantyty</label>
+                                                    <input type="number" class="form-control" id="progresspill-pancard-input">
+                                                </div>
+                                            </div>                                           
+                                        </div>                                         
+                                    </form>                                   
+                                </div>                            
+                                        <li class="float-end"><a href="javascript: void(0);" class="btn btn-primary"
+                                                    data-bs-toggle="modal" data-bs-target=".confirmModal">Save
+                                                    Production Record</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end card body -->
+                </div>
+                <!-- end card -->
             </div>
-            <div class="col-sm-6">
-                <div class="text-sm-end d-none d-sm-block">
-                    Design & Develop by <a href="#!" class="text-decoration-underline">emmat solutions</a>
+            <!-- end col -->
+        </div>
+        <!-- end row -->
+        </div> <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+        <!-- Modal -->
+        <div class="modal fade confirmModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="text-center">
+                            <div class="mb-3">
+                                <i class="bx bx-check-circle display-4 text-success"></i>
+                            </div>
+                            <h5>Confirm Save Production</h5>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-light w-md" data-bs-dismiss="modal">Go Back</button>
+                        <button type="button" class="btn btn-primary w-md    data-bs-dismiss="modal" onclick="nextTab()">Save Production</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+        <!-- end modal -->
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <script>document.write(new Date().getFullYear())</script> © zantelle limited.
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="text-sm-end d-none d-sm-block">
+                            Design & Develop by <a href="#!" class="text-decoration-underline">emmat solutions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        </div>
+        <!-- end main content-->
+        
+        </div>
+        <!-- END layout-wrapper -->
+
         <div class="rightbar-overlay"></div>
 
         <!-- JAVASCRIPT -->
@@ -430,18 +541,20 @@
         <script src="../assets/libs/feather-icons/feather.min.js"></script>
         <!-- pace js -->
         <script src="../assets/libs/pace-js/pace.min.js"></script>
-
-        <!-- select 2 plugin -->
-        <script src="../assets/libs/select2/js/select2.min.js"></script>
-
-        <!-- dropzone plugin -->
-        <script src="../assets/libs/dropzone/min/dropzone.min.js"></script>
-
-        <!-- init js -->
-        <script src="../assets/js/pages/ecommerce-select2.init.js"></script>
-
+        <!-- Sweet Alerts js -->
+        <script src="../assets/libs/sweetalert2/sweetalert2.min.js"></script>
+        
+        <!-- Sweet alert init js-->
+        <script src="../assets/js/pages/sweetalert.init.js"></script>
+        
+        <!-- twitter-bootstrap-wizard js -->
+        <script src="../assets/libs/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+        <script src="../assets/libs/twitter-bootstrap-wizard/prettify.js"></script>
+        
+        <!-- form wizard init -->
+        <script src="../assets/js/pages/form-wizard.init.js"></script>
+        
         <script src="../assets/js/app.js"></script>
-
 </body>
 
 <!-- Mirrored from themesbrand.com/dason/layouts/default/ecommerce-add-product.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Nov 2021 16:53:57 GMT -->
