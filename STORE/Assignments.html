@@ -32,7 +32,7 @@
 
 </head>
 
-<body data-topbar="dark">
+< data-topbar="dark">
 
     <!-- <body data-layout="horizontal"> -->
 
@@ -45,7 +45,7 @@
                 <div class="d-flex">
                     <!-- LOGO -->
                     <div class="navbar-brand-box">
-                        <a href="dashboard.html" class="logo logo-dark">
+                        <a href="../dashboard.html" class="logo logo-dark">
                             <span class="logo-sm">
                                 <img src="../assets/images/logo-sm.svg" alt="" height="30">
                             </span>
@@ -55,7 +55,7 @@
                             </span>
                         </a>
 
-                        <a href="dashboard.html" class="logo logo-light">
+                        <a href="../dashboard.html" class="logo logo-light">
                             <span class="logo-sm">
                                 <img src="../assets/images/logo-sm.svg" alt="" height="30">
                             </span>
@@ -224,7 +224,7 @@
                         </button>
                         <div class="dropdown-menu dropdown-menu-end">
                             <!-- item-->
-                            <a class="dropdown-item" href="apps-contacts-profile.html"><i
+                            <a class="dropdown-item" href="../profile.html"><i
                                     class="mdi mdi-face-profile font-size-16 align-middle me-1"></i> Profile</a>
                             <a class="dropdown-item" href="auth-lock-screen.html"><i
                                     class="mdi mdi-lock font-size-16 align-middle me-1"></i> Lock screen</a>
@@ -398,8 +398,192 @@
                 <!-- Sidebar -->
             </div>
         </div>
-        <!-- Left Sidebar End -->
-        <!-- copy upto here -->
+        </div>
+        <div class="main-content">
+        
+            <div class="page-content">
+                <div class="container-fluid">
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0 font-size-18">ASSIGNMENT SECTION</h4>
+        
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">ASSIGNMENT</a></li>
+        
+                                    </ol>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div> <!-- end page title -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title mb-0">Record Assignments of diffrent products</h4>
+                                </div>
+                                <div class="card-body">
+        
+                                    <div id="progrss-wizard" class="twitter-bs-wizard">
+                                        <ul class="twitter-bs-wizard-nav nav nav-pills nav-justified">
+                                            <li class="nav-item">
+                                                <a href="#progress-seller-details" class="nav-link" data-toggle="tab">
+                                                    <div class="step-icon" data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        title="Assignment Details">
+                                                        <i class="bx bx-list-ul"></i>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <!-- wizard-nav -->
+        
+                                        <div id="bar" class="progress mt-4">
+                                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated">
+                                            </div>
+                                        </div>
+                                        <div class="tab-content twitter-bs-wizard-tab-content">
+                                            <div class="tab-pane" id="progress-seller-details">
+                                                <div class="text-center mb-4">
+                                                    <h5>Assignment Details</h5>
+                                                    <p class="card-title-desc">Fill all information below</p>
+                                                </div>
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <label class="form-label">Select Product </label>
+                                                            <select class="form-select">
+                                                                <option>Select</option>
+                                                                <option>500ml water</option>
+                                                                <option>1 litre alcohol</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <label class="form-label">Accounts </label>
+                                                            <select class="form-select">
+                                                                <option>Select</option>
+                                                                <option>kakamega shop</option>
+                                                                <option>field agent</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <label for="example-date-input" class="form-label">Date</label>
+                                                            <input class="form-control" type="date" value="dd/mm/yyyy"
+                                                                id="example-date-input">
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <label class="form-label">Select unit </label>
+                                                            <select class="form-select">
+                                                                <option>Select</option>
+                                                                <option>pcs</option>
+                                                                <option>bale</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="mb-3">
+                                                                <label for="progresspill-pancard-input"
+                                                                    class="form-label">Quantity</label>
+                                                                <input type="number" class="form-control"
+                                                                    id="progresspill-pancard-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <li class="float-end"><a href="javascript: void(0);" class="btn btn-primary"
+                                                    data-bs-toggle="modal" data-bs-target=".confirmModal">Save
+                                                    ASSIGNMENT Record</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end card body -->
+                    </div>
+                    <!-- end card -->
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div> <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+        <!-- Modal -->
+        <div class="modal fade confirmModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="text-center">
+                            <div class="mb-3">
+                                <i class="bx bx-check-circle display-4 text-success"></i>
+                            </div>
+                            <h5>Confirm Save Assignment</h5>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-light w-md" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary w-md" data-bs-dismiss="modal" onclick="nextTab()">Save Assignment</button>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        <!-- end modal -->
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <script>document.write(new Date().getFullYear())</script> © zantelle limited.
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="text-sm-end d-none d-sm-block">
+                            Design & Develop by <a href="#!" class="text-decoration-underline">emmat solutions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        </div>
+        </data-topbar>
+        
+        <!-- end main content-->
+        
+        </div>
+        <!-- END layout-wrapper -->
+        
+        <div class="rightbar-overlay"></div>
+        
+        <!-- JAVASCRIPT -->
+        <script src="../assets/libs/jquery/jquery.min.js"></script>
+        <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="../assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="../assets/libs/node-waves/waves.min.js"></script>
+        <script src="../assets/libs/feather-icons/feather.min.js"></script>
+        <!-- pace js -->
+        <script src="../assets/libs/pace-js/pace.min.js"></script>
+        <!-- Sweet Alerts js -->
+        <script src="../assets/libs/sweetalert2/sweetalert2.min.js"></script>
+        
+        <!-- Sweet alert init js-->
+        <script src="../assets/js/pages/sweetalert.init.js"></script>
+        
+        <!-- twitter-bootstrap-wizard js -->
+        <script src="../assets/libs/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+        <script src="../assets/libs/twitter-bootstrap-wizard/prettify.js"></script>
+        
+        <!-- form wizard init -->
+        <script src="../assets/js/pages/form-wizard.init.js"></script>
+        
+        <script src="../assets/js/app.js"></script>
+        
+      
 
 
         <!-- ============================================================== -->
@@ -420,28 +604,7 @@
             </div>
         </footer>
 
-        <div class="rightbar-overlay"></div>
-
-        <!-- JAVASCRIPT -->
-        <script src="../assets/libs/jquery/jquery.min.js"></script>
-        <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="../assets/libs/metismenu/metisMenu.min.js"></script>
-        <script src="../assets/libs/simplebar/simplebar.min.js"></script>
-        <script src="../assets/libs/node-waves/waves.min.js"></script>
-        <script src="../assets/libs/feather-icons/feather.min.js"></script>
-        <!-- pace js -->
-        <script src="../assets/libs/pace-js/pace.min.js"></script>
-
-        <!-- select 2 plugin -->
-        <script src="../assets/libs/select2/js/select2.min.js"></script>
-
-        <!-- dropzone plugin -->
-        <script src="../assets/libs/dropzone/min/dropzone.min.js"></script>
-
-        <!-- init js -->
-        <script src="../assets/js/pages/ecommerce-select2.init.js"></script>
-
-        <script src="../assets/js/app.js"></script>
+       
 
 </body>
 

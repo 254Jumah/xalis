@@ -224,7 +224,7 @@
                         </button>
                         <div class="dropdown-menu dropdown-menu-end">
                             <!-- item-->
-                            <a class="dropdown-item" href="apps-contacts-profile.html"><i
+                            <a class="dropdown-item" href="../profile.html"><i
                                     class="mdi mdi-face-profile font-size-16 align-middle me-1"></i> Profile</a>
                             <a class="dropdown-item" href="auth-lock-screen.html"><i
                                     class="mdi mdi-lock font-size-16 align-middle me-1"></i> Lock screen</a>
@@ -401,7 +401,224 @@
         <!-- Left Sidebar End -->
         <!-- copy upto here -->
 
+        <div class="main-content">
+        
+            <div class="page-content">
+                <div class="container-fluid">
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0 font-size-18">STORE STATUS OF DIFFRENT ASSIGNMENT</h4>
+        
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">STORES PRODUCTS</a></li>
+                                    </ol>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Diffrent Stores</h4>
+        
+                                </div>
+                                <div class="card-body">
+        
+                                    <table id="datatable" class="table table-bordered dt-responsive  nowrap w-100">
+                                        <thead>
+                                            <tr>
+                                                <th>Store Name</th>
+                                                <th>Product name</th>
+                                                <th>Unit</th>
+                                                <th>Last Dispach Quantity</th>
+                                                <th>Last Dispach Date</th>
+                                                <th>Quantity in store</th>
+                                                <th>Account</th>
+                                                
+                                              
+        
+                                            </tr>
+                                        </thead>
+        
+        
+                                        <tbody>
+                                            <tr>
+                                                <td>KAkamega shop</td>
+                                                <td>500ml </td>
+                                                <td>bale</td>
+                                                <td>61</td>
+                                                <td>03/05/2022</td>
+                                                <td>500</td>
+                                                <td>@mary_seller</td> 
+                                             
+                                                                                            
+                                            </tr>
+                                            <tr>
+                                                <td>MAIN STORE</td>
+                                                <td>500ml </td>
+                                                <td>bale</td>
+                                                <td>66</td>
+                                                <td>23/09/2023</td>
+                                                <td>50</td>
+                                                <td>@DAVID_PRODUCTN</td>
+                                               
+                                              
+                                               
+                                            </tr>
+                                            <tr>
+                                                <td>SELLER</td>
+                                                <td>500ml </td>
+                                                <td>bale</td>
+                                                <td>6555</td>
+                                                <td>4/08/2023</td>
+                                                <td>56</td>
+                                                <td>@ODESI_seller</td>
+                                               
+                                               
+                                           
+                                            </tr>
+        
+                                        </tbody>
+                                    </table>
+        
+                                </div>
+                            </div>
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
 
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+            <h4 class="mb-sm-0 font-size-18">ASSIGNMENT SECTION</h4>
+
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">ASSIGNMENT</a></li>
+
+                </ol>
+            </div>
+
+        </div>
+    </div>
+</div> <!-- end page title -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title mb-0">Record Assignments of diffrent products</h4>
+            </div>
+            <div class="card-body">
+
+                <div id="progrss-wizard" class="twitter-bs-wizard">
+                    <ul class="twitter-bs-wizard-nav nav nav-pills nav-justified">
+                        <li class="nav-item">
+                            <a href="#progress-seller-details" class="nav-link" data-toggle="tab">
+                                <div class="step-icon" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Assignment Details">
+                                    <i class="bx bx-list-ul"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- wizard-nav -->
+
+                    <div id="bar" class="progress mt-4">
+                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated">
+                        </div>
+                    </div>
+                    <div class="tab-content twitter-bs-wizard-tab-content">
+                        <div class="tab-pane" id="progress-seller-details">
+                            <div class="text-center mb-4">
+                                <h5>Assignment Details</h5>
+                                <p class="card-title-desc">Fill all information below</p>
+                            </div>
+                            <form>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <label class="form-label">Select Product </label>
+                                        <select class="form-select">
+                                            <option>Select</option>
+                                            <option>500ml water</option>
+                                            <option>1 litre alcohol</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label class="form-label">Accounts </label>
+                                        <select class="form-select">
+                                            <option>Select</option>
+                                            <option>kakamega shop</option>
+                                            <option>field agent</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="example-date-input" class="form-label">Date</label>
+                                        <input class="form-control" type="date" value="dd/mm/yyyy"
+                                            id="example-date-input">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label class="form-label">Select unit </label>
+                                        <select class="form-select">
+                                            <option>Select</option>
+                                            <option>pcs</option>
+                                            <option>bale</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="progresspill-pancard-input" class="form-label">Quantity</label>
+                                            <input type="number" class="form-control" id="progresspill-pancard-input">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <li class="float-end"><a href="javascript: void(0);" class="btn btn-primary"
+                                data-bs-toggle="modal" data-bs-target=".confirmModal">Save
+                                ASSIGNMENT Record</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end card body -->
+</div>
+<!-- end card -->
+</div>
+<!-- end col -->
+</div>
+<!-- end row -->
+</div> <!-- container-fluid -->
+</div>
+<!-- End Page-content -->
+<!-- Modal -->
+<div class="modal fade confirmModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center">
+                    <div class="mb-3">
+                        <i class="bx bx-check-circle display-4 text-success"></i>
+                    </div>
+                    <h5>Confirm Save Assignment</h5>
+                </div>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-light w-md" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary w-md" data-bs-dismiss="modal" onclick="nextTab()">Save
+                    Assignment</button>
+            </div>
+
+        </div>
+    </div>
+</div>
         <!-- ============================================================== -->
         <!-- Start right Content here -->
         <!-- ============================================================== -->
@@ -420,6 +637,10 @@
                     </div>
                 </div>
             </div>
+            </div>
+            </div>
+            </div>
+            </div>
         </footer>
 
         <div class="rightbar-overlay"></div>
@@ -433,17 +654,33 @@
         <script src="../assets/libs/feather-icons/feather.min.js"></script>
         <!-- pace js -->
         <script src="../assets/libs/pace-js/pace.min.js"></script>
-
-        <!-- select 2 plugin -->
-        <script src="../assets/libs/select2/js/select2.min.js"></script>
-
-        <!-- dropzone plugin -->
-        <script src="../assets/libs/dropzone/min/dropzone.min.js"></script>
-
-        <!-- init js -->
-        <script src="../assets/js/pages/ecommerce-select2.init.js"></script>
-
+        
+        <!-- Required datatable js -->
+        <script src="../assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="../assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+        <!-- Buttons examples -->
+        <script src="../assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+        <script src="../assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+        <script src="../assets/libs/jszip/jszip.min.js"></script>
+        <script src="../assets/libs/pdfmake/build/pdfmake.min.js"></script>
+        <script src="../assets/libs/pdfmake/build/vfs_fonts.js"></script>
+        <script src="../assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+        <script src="../assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+        <script src="../assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+        
+        <!-- Responsive examples -->
+        <script src="../assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+        <script src="../assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+        
+        <!-- Datatable init js -->
+        <script src="../assets/js/pages/datatables.init.js"></script>
+        
         <script src="../assets/js/app.js"></script>
+        </div>
+        </div>
+        </div>
+        </div>
+        </body>
 
 </body>
 
