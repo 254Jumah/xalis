@@ -398,8 +398,145 @@
                 <!-- Sidebar -->
             </div>
         </div>
-        <!-- Left Sidebar End -->
-        <!-- copy upto here -->
+    </div>
+
+    <div class="main-content">
+        <div class="page-content">
+            <class class="container-fluid">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                            <h4 class="mb-sm-0 font-size-18">MATERIAL OF PRODUCTION</h4>
+
+                            <div class="page-title-right">
+                                <ol class="breadcrumb m-0">
+                                    <li class="breadcrumb-item"><a href="javascript: void(0);">PRODUCTION</a></li>
+                                </ol>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Company Assets </h4>
+
+                            </div>
+                            <div class="card-body">
+                                <table id="datatable-buttons" class="table table-bordered dt-responsive nowrap w-80">
+                                    <thead>
+                                        <tr>
+                                            <th>Product Name</th>
+                                            <th>Cartegory</th>
+                                            <th>units</th>
+                                            <th>Date Purchased</th>
+                                            <th>Batch number</th>
+                                            <th>Quantyty in Store</th>
+                                            <th>Recorded By</th>
+                                            <th>Depertment</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+
+
+                                    <tbody>
+
+                                        <tr>
+                                            <td>500ml bale</td>
+                                            <td>production</td>
+                                            <td>bale</td>
+                                            <td>10/03/2023</td>
+                                            <td>5u7689c</td>
+                                            <td>567</td>
+                                            <td>@WANZETSE_PRODUCTION</td>
+                                            <td>Sales</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <a href="#" class="dropdown-toggle card-drop"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <i class="mdi mdi-dots-horizontal font-size-18"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end">
+                                                        <li><a href="#" class="dropdown-item"><i
+                                                                    class="mdi mdi-pencil font-size-16 text-success me-1"></i>
+                                                                Edit</a>
+                                                        </li>
+                                                        <li><a href="#" class="dropdown-item"><i
+                                                                    class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
+                                                                Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>500ml bale</td>
+                                            <td>production</td>
+                                            <td>bale</td>
+                                            <td>10/03/2023</td>
+                                            <td>5u7689c</td>
+                                            <td>5655</td>
+                                            <td>@WANZETSE_PRODUCTION</td>
+                                            <td>ww</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <a href="#" class="dropdown-toggle card-drop"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <i class="mdi mdi-dots-horizontal font-size-18"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end">
+                                                        <li><a href="#" class="dropdown-item"><i
+                                                                    class="mdi mdi-pencil font-size-16 text-success me-1"></i>
+                                                                Edit</a>
+                                                        </li>
+                                                        <li><a href="#" class="dropdown-item"><i
+                                                                    class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
+                                                                Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>500ml bale</td>
+                                            <td>production</td>
+                                            <td>bale</td>
+                                            <td>10/03/2023</td>
+                                            <td>5u7689c</td>
+                                            <td>567</td>
+
+                                            <td>@WANZETSE_PRODUCTION</td>
+                                            <td>dd</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <a href="#" class="dropdown-toggle card-drop"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <i class="mdi mdi-dots-horizontal font-size-18"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end">
+                                                        <li><a href="#" class="dropdown-item"><i
+                                                                    class="mdi mdi-pencil font-size-16 text-success me-1"></i>
+                                                                Edit</a>
+                                                        </li>
+                                                        <li><a href="#" class="dropdown-item"><i
+                                                                    class="mdi mdi-trash-can font-size-16 text-danger me-1"></i>
+                                                                Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- end cardaa -->
+                    </div> <!-- end col -->
+                </div> <!-- end row -->
+        </div> <!-- container-fluid -->
 
 
         <!-- ============================================================== -->
@@ -431,14 +568,39 @@
         <script src="../assets/libs/feather-icons/feather.min.js"></script>
         <!-- pace js -->
         <script src="../assets/libs/pace-js/pace.min.js"></script>
+        <!-- Required datatable js -->
+        <script src="../assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="../assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
 
-        <!-- select 2 plugin -->
-        <script src="../assets/libs/select2/js/select2.min.js"></script>
+        <!-- apexcharts -->
+        <script src="../assets/libs/apexcharts/apexcharts.min.js"></script>
+        <!-- Buttons examples -->
+        <script src="../assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+        <script src="../assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+        <script src="../assets/libs/jszip/jszip.min.js"></script>
+        <script src="../assets/libs/pdfmake/build/pdfmake.min.js"></script>
+        <script src="../assets/libs/pdfmake/build/vfs_fonts.js"></script>
+        <script src="../assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+        <script src="../assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+        <script src="../assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
 
-        <!-- dropzone plugin -->
-        <script src="../assets/libs/dropzone/min/dropzone.min.js"></script>
+        <!-- Responsive examples -->
+        <script src="../assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+        <script src="../assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
 
-        <!-- init js -->
+        <!-- Plugins js-->
+        <script src="../assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js"></script>
+        <script src="../assets/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-world-mill-en.js"></script>
+        <!-- dashboard init -->
+        <script src="../assets/js/pages/dashboard.init.js"></script>
+        <!-- Datatable init js -->
+        <script src="../assets/js/pages/datatables.init.js"></script>
+        <!-- trying more js -->
+
+        <script src="../assets/js/app.js"></script>
+
+
+        <script src="../assets/js/app.js"></script>
         <script src="../assets/js/pages/ecommerce-select2.init.js"></script>
 
         <script src="../assets/js/app.js"></script>
